@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 var Nav = React.createClass({
   propTypes: {
@@ -13,7 +14,9 @@ var Nav = React.createClass({
   },
   render(){
     var links = this.props.links.map((link, i) => {
-      return <li key={i}><a onClick={this.props.pageClick} className={this.props.page == link ? "nav_links-active" : null}>{link}</a></li>
+      return <li key={i}><Link to={"/" + link}
+      onClick={this.props.pageClick}
+      className={this.props.page == link ? "nav_links-active" : null}>{link}</Link></li>
     });
     var categories = this.props.categories.map((cat, i) => {
       if(this.props.categories.indexOf(cat) == this.props.categories.length - 1){

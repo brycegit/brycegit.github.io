@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom'
-import Nav from './Nav'
-import BlogListing from './BlogListing'
-import Landing from './Landing'
-import Footer from './Footer'
+import ReactDOM from 'react-dom';
+import { Link } from 'react-router';
+import Nav from './Nav';
+import BlogListing from './BlogListing';
+import Landing from './Landing';
+import Footer from './Footer';
 //TO DO - recreate static components with const; use {...obj} if possible; configure sass properly; import json properly(axios); use map within interpolation where possible (vs adding items to variable and usng variable) & don't use index as key; refactor nav in app so there aren't 3 versions; serverside rendering; refactor clicks to use prop syntax; set up routing; add pushState
 var App = React.createClass({
   getInitialState(){
