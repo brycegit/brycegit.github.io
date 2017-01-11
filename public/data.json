@@ -1,0 +1,48 @@
+{
+  "posts":
+  [
+    {
+      "title": "Hello Prods",
+      "link": "/hello-world",
+      "category": "productivity",
+      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
+      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+    },
+    {
+      "title": "Hellodd World",
+      "link": "/hello-world",
+      "category": "development",
+      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
+      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+    },
+    {
+      "title": "STUFFFF",
+      "link": "/hello-world",
+      "category": "project management",
+      "teaser": "<p>I’ve finally started a blog! For those that don’t know me, my name is Bryce and I have worked in the digital marketing space for the last 6 years...</p>",
+      "content": "<p>I’ve finally started a blog! For those that don’t know me, my name is Bryce and I have worked in the digital marketing space for the last 6 years. I’ve spent the majority of this time as a web project manager. I’ve also done a bit of web design and development outside of my professional roles. I’m a productivity nerd, music lover and recent comic book enthusiest. I live in Medford MA with my wife and two children dogs.</p><p>Recently I’ve decided to transition into web development full time, and am currently attending a school called Hack Reactor, focusing on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+    },
+    {
+      "title": "Hello World",
+      "link": "/hello-world",
+      "category": "dogs",
+      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
+      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+    },
+    {
+      "title": "Hellodd World",
+      "link": "/hello-world",
+      "category": "development",
+      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
+      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+    }
+  ],
+  "about":
+    {
+      "content" : "<p>This is the about page -- I REALLY hope you like it so much! I made it because I LOVE treats and snacks.</p>"
+    },
+  "contact":
+    {
+      "content" : "<p>This is the contact page -- I REALLY hope you like it so much! I made it because I LOVE treats and snacks.</p>"
+    }
+}
