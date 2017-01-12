@@ -5,14 +5,15 @@ import Nav from './Nav';
 import BlogListing from './BlogListing';
 import Landing from './Landing';
 import Footer from './Footer';
-//TO DO - recreate static components with const; use {...obj} if possible; configure sass properly; import json properly(axios); use map within interpolation where possible (vs adding items to variable and usng variable) & don't use index as key; refactor nav in app so there aren't 3 versions; serverside rendering; refactor clicks to use prop syntax; set up routing; add pushState
+import Global404 from './Global404';
+//TO DO - set up routing; recreate static components with const; use {...obj} if possible; configure sass properly; import json properly(axios); use map within interpolation where possible (vs adding items to variable and usng variable) & don't use index as key; refactor nav in app so there aren't 3 versions; serverside rendering; refactor clicks to use prop syntax; add pushState
 var App = React.createClass({
   getInitialState(){
     return {data : null, page: "posts", category: "All", blogPost: null}
   },
   componentDidMount(){
     if(self.fetch){
-      fetch('data.json')
+      fetch('/data.json')
         .then(response => {
           if(response.ok){
           response.json()
@@ -57,6 +58,41 @@ var App = React.createClass({
     var categories = [];
     var currentPost = "";
     var content = "";
+
+    //404 redirect
+    if (this.state.data != null) {
+      if(this.props.params.category){
+        var doesCatExists = this.state.data.posts.reduce((acc, curr) => {
+          curr.category === this.props.params.category ? acc = true : null;
+          return acc;
+        }, false);
+        if(doesCatExists === false){
+          // this.state.page = '404';
+          return <Global404/>;
+        }
+      }
+    }
+    if (this.state.data != null) {
+      if(this.props.params.postTitle){
+        var doesCatExists = this.state.data.posts.reduce((acc, curr) => {
+          curr.title === this.props.params.postTitle ? acc = true : null;
+          return acc;
+        }, false);
+        if(doesCatExists === false){
+          return <Global404/>;
+        }
+      }
+    }
+
+    //sets page via url
+    this.props.route.page ? this.state.page = this.props.route.page : null;
+
+    // sets cat via url
+    this.props.params.category ? this.state.category = this.props.params.category : null;
+
+    // sets post via url
+    this.props.params.postTitle ? this.state.blogPost = this.props.params.postTitle : null;
+
     for(var page in this.state.data){
       links.push(page);
       if(page == "posts"){
@@ -74,6 +110,7 @@ var App = React.createClass({
       }
     }
     if(this.state.page == "posts" && this.state.blogPost == null){
+
       return (
         <div>
         <Nav home={this.displayHome} pageClick={this.changePage} categoryClick={this.displayCategory} links={links} categories={categories} page={this.state.page} category={this.state.category}/>
@@ -81,12 +118,13 @@ var App = React.createClass({
         <Footer/>
         </div>
       )
+
     }else if(this.state.blogPost){
       return (
         <div>
         <Nav home={this.displayHome} pageClick={this.changePage} categoryClick={this.displayCategory} links={links} categories={categories} page={this.state.page} category={this.state.category}/>
         <Landing title={this.state.blogPost} content={currentPost.content}>
-        <a className="button" onClick={this.displayHome}>View All Posts</a>
+        <Link to={"/posts"} className="button" onClick={this.displayHome}>View All Posts</Link>
         </Landing>
         <Footer/>
         </div>

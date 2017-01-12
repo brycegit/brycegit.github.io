@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 var BlogListing = React.createClass({
   propTypes: {
@@ -13,7 +14,7 @@ var BlogListing = React.createClass({
         <div key={i} className={postClass}>
           <h2>{item.title}</h2>
           <div dangerouslySetInnerHTML={ {__html: item.teaser} }></div>
-          <a name={item.title} onClick={this.props.click} className="button">Read Post</a>
+          <Link to={"/posts/" + item.category + "/" + item.title} name={item.title} onClick={this.props.click} className="button">Read Post</Link>
         </div>
       )
       });

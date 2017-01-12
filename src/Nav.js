@@ -20,9 +20,9 @@ var Nav = React.createClass({
     });
     var categories = this.props.categories.map((cat, i) => {
       if(this.props.categories.indexOf(cat) == this.props.categories.length - 1){
-        return <a key={i}><span onClick={this.props.categoryClick} className={this.props.category == cat ? "cat_links-active" : null}>{cat}</span></a>
+        return <Link to={"/posts/" + cat} key={i}><span onClick={this.props.categoryClick} className={this.props.category == cat ? "cat_links-active" : null}>{cat}</span></Link>
       }else{
-        return <a key={i}><span onClick={this.props.categoryClick} className={this.props.category == cat ? "cat_links-active" : null}>{cat}</span>, </a>
+        return <Link to={"/posts/" + cat} key={i}><span onClick={this.props.categoryClick} className={this.props.category == cat ? "cat_links-active" : null}>{cat}</span>, </Link>
       }
     });
     if (categories.length > 0) {
@@ -31,7 +31,7 @@ var Nav = React.createClass({
     }
     return (
       <nav className="row">
-            <div className="nav_logo"><div className={"hero_h1"}><a onClick={this.props.home}> {this.defaultProps.logo} : </a></div><span className="nav_sublogo"><p>{categories}</p></span></div>
+            <div className="nav_logo"><div className={"hero_h1"}><Link to={"/"} onClick={this.props.home}> {this.defaultProps.logo} : </Link></div><span className="nav_sublogo"><p>{categories}</p></span></div>
           <div className="nav_links">
             <ul>
               {links}
