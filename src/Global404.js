@@ -10,7 +10,9 @@ var Global404 = React.createClass({
       <div className="row">
         <div className="box-100">
           <h1>404 Page Not Found</h1>
+          <h2>Redirecting to home...</h2>
         </div>
+        <meta httpEquiv="refresh" content="0;URL='/'"></meta>
       </div>
     )
   }
