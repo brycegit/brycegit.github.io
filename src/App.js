@@ -85,11 +85,14 @@ var App = React.createClass({
       }
     }
 
-    //sets page via url
+    //sets page via router
     this.props.route.page ? this.state.page = this.props.route.page : null;
 
-    //sets category via url
+    //sets category via router
     this.props.route.category ? this.state.category = this.props.route.category : null;
+
+    //sets blogPost via router
+    this.props.route.blogPost === null ? this.state.blogPost = null : null;
 
     // sets cat via url
     this.props.params.category ? this.state.category = this.props.params.category : null;
