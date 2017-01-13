@@ -106,7 +106,8 @@ h1 {
     font-size: calc(3.18595em + 0.5vw); } }
 body {
   font-family: 'Quattrocento', serif;
-  text-align: center; }
+  text-align: center;
+  color: #363636; }
 
 h1, h2, h3, h4, h5 {
   font-weight: 300;
