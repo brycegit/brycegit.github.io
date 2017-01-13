@@ -19,6 +19,7 @@ var App = React.createClass({
           response.json()
             .then(json => {
               this.setState({data : json});
+              root.classList.remove('hide');
             })
           }else{
             console.log('Network response was not ok.');
@@ -86,6 +87,9 @@ var App = React.createClass({
 
     //sets page via url
     this.props.route.page ? this.state.page = this.props.route.page : null;
+
+    //sets category via url
+    this.props.route.category ? this.state.category = this.props.route.category : null;
 
     // sets cat via url
     this.props.params.category ? this.state.category = this.props.params.category : null;

@@ -2,39 +2,16 @@
   "posts":
   [
     {
-      "title": "Hello Prods",
-      "link": "/hello-world",
-      "category": "productivity",
-      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
-      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+      "title": "4 take-aways from building my first React app",
+      "category": "reactJS",
+      "teaser": "<p>Over the last week I&rsquo;ve been building this React-powered blog, which is the first time I&rsquo;ve used React to build a complete product. Here are a few takeaways from my first experience with React...</p>",
+      "content": "<p>Over the last week I&rsquo;ve been building this React-powered blog, which is the first time I&rsquo;ve used React to build a complete product. Here are a few takeaways from my first experience with React:</p><ol><li><b>State is really cool.</b> While watching a few React tutorials a while back I remember them saying &ldquo;be sure to house the state in the parent component&rdquo;. While I had a basic understanding of what this meant, the benefits of doing this didn&rsquo;t hit home until I started building out the navigation for my blog. I used the parent &lsquo;App&rsquo; component to hold all states; most importantly current page and current category. While building the blog I changed this navigation functionality about 10 times, and being able to do it in one place was it incredibly easy and efficient. </li><li><b>Thinking in components makes CSS easier.</b> Normally I don&rsquo;t go out of my way to componentize sites, and as a result my CSS often gets messy, with some classes affecting multiple components. With my react blog, since everything is naturally separated into components, this is also how I ended up structuring my CSS. As with state, this made making updates and identifying issues very very easy and fast. </li><li><b>The React creators care.</b> Top two things that made be realize how much the React creators care about the React experience. 1) the fact that you have to use the tag dangerouslySetInnerHTML to convert HTML strings to HTML, since it apparently increases security risks. 2) the amount of helpful error message programmed into the library. </li><li><b>The main thing that annoyed me about React is the page load transition.</b> When the page is loaded, for a brief second you will see a half-built page. To combat this I ended up adding a ‘hide’ class to the root div and removing it once the json has been fetched:<pre>fetch('/data.json')<br>&nbsp;&nbsp;.then(response => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if(response.ok){<br>&nbsp;&nbsp;&nbsp;&nbsp;response.json()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.then(json => {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.setState({data : json});<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>root.classList.remove('hide');</b><br>&nbsp;&nbsp;})</pre></li></ol>"
     },
     {
-      "title": "Hellodd World",
-      "link": "/hello-world",
-      "category": "development",
-      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
-      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
-    },
-    {
-      "title": "STUFFFF",
-      "link": "/hello-world",
-      "category": "project management",
-      "teaser": "<p>I’ve finally started a blog! For those that don’t know me, my name is Bryce and I have worked in the digital marketing space for the last 6 years...</p>",
-      "content": "<p>I’ve finally started a blog! For those that don’t know me, my name is Bryce and I have worked in the digital marketing space for the last 6 years. I’ve spent the majority of this time as a web project manager. I’ve also done a bit of web design and development outside of my professional roles. I’m a productivity nerd, music lover and recent comic book enthusiest. I live in Medford MA with my wife and two children dogs.</p><p>Recently I’ve decided to transition into web development full time, and am currently attending a school called Hack Reactor, focusing on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
-    },
-    {
-      "title": "Hello World",
-      "link": "/hello-world",
-      "category": "dogs",
-      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
-      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
-    },
-    {
-      "title": "Hellodd World",
-      "link": "/hello-world",
-      "category": "development",
-      "teaser": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry...</p>",
-      "content": "<p>Welcome! I'm Bryce. I love dogs, cats, the internet, creating things, outer space and boogie boarding. I have spent the last 8 years working in the digital marketing industry — primarily on website design and production projects.</p><p>Recently I’ve decided to transition into front-end/full stack development, and I am currently attending a school called Hack Reactor which focuses on full-stack javascript development.</p><p>I’ll be using this blog to share my thoughts on digital marketing, web development, project management and productivity.</p><p>Sign up for my email list to be notified when there are new posts!</p>"
+      "title": "Hello World!",
+      "category": "randomness",
+      "teaser": "<p>I&rsquo;ve finally started a blog! For those of you that don&rsquo;t know me, my name is Bryce and I have worked in the digital marketing industry for the last 10(ish) years...</p>",
+      "content": "<p>I&rsquo;ve finally started a blog! For those of you that don&rsquo;t know me, my name is Bryce and I have worked in the digital marketing industry for the last 10(ish) years. I&rsquo;ve spent the majority of this time as a web project manager. I&rsquo;ve also worked on a few web design and development freelance projects outside of my professional roles. I&rsquo;m a productivity nerd, music lover and recent comic book enthusiest. I live in Medford MA with my wife and two <span style='text-decoration: line-through'>children</span> dogs.</p><p>Recently I&rsquo;ve decided to transition into software engineering full time, and am currently attending a school called Hack Reactor that focuses on full-stack javascript development.</p><p>I&rsquo;ll be using this blog to share my thoughts on digital marketing, software engineering, project management and productivity (and other random things).</p><p>Sign up for my email list to be notified when there are new posts!</p>"
     }
   ],
   "about":

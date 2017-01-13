@@ -10,7 +10,7 @@ var Nav = React.createClass({
     category: React.PropTypes.string
   },
   defaultProps: {
-    logo: "bryce dooley"
+    logo: "bryce_dooley"
   },
   render(){
     var links = this.props.links.map((link, i) => {
