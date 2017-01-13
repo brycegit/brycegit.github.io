@@ -101,7 +101,12 @@ var App = React.createClass({
       links.push(page);
       if(page == "posts"){
         this.state.data[page].map(post => {
-            this.state.category == "All" ? posts.push(post) : post.category == this.state.category ? posts.push(post) : null;
+            if(this.state.category == "All"){
+              posts.push(post);
+              this.state.blogPost = null;
+            }else{
+              post.category == this.state.category ? posts.push(post) : null;
+            }
             if(this.state.blogPost == post.title) currentPost = post;
             if(categories.indexOf(post.category) == -1) {
                 categories.push(post.category);
