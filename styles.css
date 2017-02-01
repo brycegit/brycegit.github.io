@@ -220,7 +220,8 @@ nav .nav_sublogo {
   display: block;
   padding: 1.618rem;
   font-family: 'Quattrocento';
-  font-weight: 500; }
+  font-weight: 500;
+  font-size: 1.4em; }
   nav .nav_sublogo p {
     text-align: center;
     padding: 0; }
