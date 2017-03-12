@@ -10,7 +10,7 @@ var Landing = React.createClass({
       <div className="row">
         <div className="box-100">
           <h1>{this.props.title}</h1>
-          <div dangerouslySetInnerHTML={ {__html: this.props.content} }></div>
+          <div className="content" dangerouslySetInnerHTML={ {__html: this.props.content} }></div>
           {this.props.children}
         </div>
       </div>

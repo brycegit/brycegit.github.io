@@ -56,7 +56,7 @@ summary {
 html {
   font-size: 85%; }
 
-p, li, button, .button, label, table {
+p, blockquote, pre, li, button, .button, label, table {
   font-size: 1em;
   font-size: calc(1em + 0.5vw); }
 
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5 {
 h2 {
   font-weight: 300; }
 
-p, li {
+p, blockquote, pre, li {
   line-height: 1.8em;
   padding: 0 0 1.618rem 0;
   margin: 0 auto;
@@ -179,10 +179,10 @@ li a {
 .nav_links-active {
   border-bottom: 3px solid #5897C4; }
 
-p a span {
+p a span, blockquote a span, pre a span {
   background-color: transparent;
   transition: all .3s ease; }
-  p a span:hover {
+  p a span:hover, blockquote a span:hover, pre a span:hover {
     background-color: #dce9f3; }
 
 .cat_links-active {
@@ -200,9 +200,36 @@ p a span {
 .hide {
   display: none !important; }
 
+blockquote {
+  font-size: 150%;
+  color: dimgray;
+  padding: 2.61792rem; }
+
+pre {
+  color: #030303;
+  font-family: monospace;
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #e6e8eb; }
+
+pre {
+  white-space: pre-wrap;
+  /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */ }
+
+.content a {
+  border-bottom: 3px solid #5897C4; }
+
 .colorBg {
   background-color: #5897C4; }
-  .colorBg a, .colorBg p, .colorBg h1, .colorBg h2, .colorBg h3, .colorBg h4, .colorBg .button, .colorBg .nav_logo, .colorBg .nav_sublogo {
+  .colorBg a, .colorBg p, .colorBg blockquote, .colorBg pre, .colorBg h1, .colorBg h2, .colorBg h3, .colorBg h4, .colorBg .button, .colorBg .nav_logo, .colorBg .nav_sublogo {
     color: #fff; }
   .colorBg .button {
     border-color: #fff; }
@@ -222,7 +249,7 @@ nav .nav_sublogo {
   font-family: 'Quattrocento';
   font-weight: 500;
   font-size: 1.25em; }
-  nav .nav_sublogo p {
+  nav .nav_sublogo p, nav .nav_sublogo blockquote, nav .nav_sublogo pre {
     text-align: center;
     padding: 0; }
 nav .nav_links {
@@ -249,7 +276,7 @@ nav .nav_links {
 
 footer {
   padding-bottom: 2.61792rem; }
-  footer p {
+  footer p, footer blockquote, footer pre {
     padding-bottom: 0;
     text-align: center; }
 
