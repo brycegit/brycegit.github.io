@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 15 Sep 2018 01:17:31 GMT</lastBuildDate><item><title><![CDATA[How to replace a git branch with a new codebase]]></title><description><![CDATA[If you’re in a situation where you need to completely replace an entire branch’s codebase (as well as commits, history, etc.) on GitHub…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//github-branch-replace/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//github-branch-replace/</guid><pubDate>Fri, 14 Sep 2018 12:55:58 GMT</pubDate><content:encoded>&lt;p&gt;If you’re in a situation where you need to completely replace an entire branch’s codebase (as well as commits, history, etc.) on GitHub, this is how you can go about doing it. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Backup the old branch on a new branch called “archive” and push to the remote for safe keeping&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd branch/being/replaced/path
+git checkout &amp;lt;branch-being-replaced&amp;gt;
+git checkout -b archive &amp;amp;&amp;amp; git push origin -u archive&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go into the new project/codebase and set up git (if not done already)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;cd new/codebase/path
+git init&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the origin of the new codebase to point to the repo containing the branch being replaced&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/&amp;lt;your-git-username&amp;gt;/&amp;lt;your-git-repo&amp;gt;
+(OR w/ SSH) git remote add origin git@github.com:&amp;lt;your-git-username&amp;gt;/&amp;lt;your-git-repo&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Force push the new codebase to the branch being replaced (NOT the “archive” branch)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git push --force origin &amp;lt;branch-being-replaced&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it!&lt;/p&gt;</content:encoded></item></channel></rss>

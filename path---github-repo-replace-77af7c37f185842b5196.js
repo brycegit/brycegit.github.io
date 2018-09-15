@@ -1,0 +1,2 @@
+webpackJsonp([0xb6429ead0bc7],{519:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Bryce's Blog",author:"Bryce Dooley"}},markdownRemark:{id:"/Users/brycedooley/Documents/blog/gatsby-blog/src/pages/github-repo-replace/index.md absPath of file >>> MarkdownRemark",html:"",frontmatter:{title:"",date:null,tag:null}}},pathContext:{slug:"/github-repo-replace/",previous:{fields:{slug:"/hi-folks/"},frontmatter:{title:"It's a double iframe all the way!"}},next:null}}}});
+//# sourceMappingURL=path---github-repo-replace-77af7c37f185842b5196.js.map
