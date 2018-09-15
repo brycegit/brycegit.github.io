@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---my-second-post": [
+      "path---my-second-post-b43e657a83471ab1ac13.js",
+      "path---my-second-post-b43e657a83471ab1ac13.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-b5df4454159bfae83f74.js",
       "component---src-pages-index-js-b5df4454159bfae83f74.js.map"
@@ -20,9 +24,17 @@
       "component---src-layouts-index-js-941a1ff900a6a0f29bb9.js",
       "component---src-layouts-index-js-941a1ff900a6a0f29bb9.js.map"
     ],
+    "path---hi-folks": [
+      "path---hi-folks-6ad48a02dd5aebdebc7e.js",
+      "path---hi-folks-6ad48a02dd5aebdebc7e.js.map"
+    ],
     "path---index": [
-      "path---index-ac273683f5af6861b486.js",
-      "path---index-ac273683f5af6861b486.js.map"
+      "path---index-4ecd6d36ce69aef915f2.js",
+      "path---index-4ecd6d36ce69aef915f2.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-caa9c2eb837b6941489b.js",
+      "path---hello-world-caa9c2eb837b6941489b.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -38,23 +50,23 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---github-repo-replace": [
+      "path---github-repo-replace-77af7c37f185842b5196.js",
+      "path---github-repo-replace-77af7c37f185842b5196.js.map"
+    ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-31fa6ec92bce382a4ce3.js",
+      "app-b5272d586a65d78a11e8.js",
       "build-js-styles.css",
-      "app-31fa6ec92bce382a4ce3.js.map",
+      "app-b5272d586a65d78a11e8.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "path---github-branch-replace": [
-      "path---github-branch-replace-debc75e143363ed42c24.js",
-      "path---github-branch-replace-debc75e143363ed42c24.js.map"
     ]
   }
 }
