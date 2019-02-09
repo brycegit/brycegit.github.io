@@ -34,9 +34,13 @@ class Bio extends React.Component {
             // ...scale(-.15),
           }}
         >
-          A blog by <strong>Bryce Dooley</strong> &mdash;  
-          a Software Engineer, Dad, Husband, and Professional Power Napper
-          &mdash; based out of Boston, MA.
+          {/* A blog by <strong>Bryce Dooley</strong> &mdash;  
+          a Software Engineer, Dad, Husband, and Productivity Nerd
+          &mdash; based out of Boston, MA. <a>Subscribe</a> if you like JavaScript, React, Node, or Puppies. */}
+
+          A  blog by <strong>Bryce Dooley</strong> &mdash;  
+          a JavaScript Engineer trying to get the most done in the shortest time
+          &mdash;  <a>follow me</a> as I learn things.
         </p>
       </div>
     )
