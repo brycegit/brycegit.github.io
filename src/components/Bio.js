@@ -36,8 +36,9 @@ class Bio extends React.Component {
             }
           }
         >
-          A blog by <strong>Bryce Dooley</strong> &mdash; a Software Engineer,
-          Dad, Husband, and Productivity Nerd &mdash; based out of Boston, MA.
+          A blog by <a href="https://twitter.com/BryceDooley">Bryce Dooley</a>{' '}
+          &mdash; a Software Engineer, Dad, Husband, and Productivity Nerd
+          &mdash; based out of Boston, MA.
           {/* <a>Subscribe</a> if you like JavaScript, React, Node, or Puppies. */}
           {/* A blog by <strong>Bryce Dooley</strong> &mdash; a full stack developer
           trying to get the most done in the shortest amount of time &mdash;{' '}
