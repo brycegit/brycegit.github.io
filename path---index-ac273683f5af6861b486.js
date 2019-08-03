@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{517:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Bryce's Blog"}},allMarkdownRemark:{edges:[{node:{excerpt:"If you’re in a situation where you need to completely replace an entire branch’s codebase (as well as commits, history, etc.) on GitHub…",fields:{slug:"/github-branch-replace/"},frontmatter:{date:"14 September, 2018",title:"How to replace a git branch with a new codebase"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-ac273683f5af6861b486.js.map

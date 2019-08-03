@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0089ac3e2715cc7fa883.js",
-      "component---src-pages-index-js-0089ac3e2715cc7fa883.js.map"
+      "component---src-pages-index-js-f22063734ae89e4ca808.js",
+      "component---src-pages-index-js-f22063734ae89e4ca808.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -13,16 +13,20 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-2a295755da41215fae13.js",
-      "component---src-templates-blog-post-js-2a295755da41215fae13.js.map"
+      "component---src-templates-blog-post-js-389ba60423164e0c643b.js",
+      "component---src-templates-blog-post-js-389ba60423164e0c643b.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-9b20f4e23cd156b4c267.js",
       "component---src-layouts-index-js-9b20f4e23cd156b4c267.js.map"
     ],
+    "path---es-2019": [
+      "path---es-2019-f65fc1f402b092600d4b.js",
+      "path---es-2019-f65fc1f402b092600d4b.js.map"
+    ],
     "path---index": [
-      "path---index-ac273683f5af6861b486.js",
-      "path---index-ac273683f5af6861b486.js.map"
+      "path---index-563fa4d51469d9aa9ff6.js",
+      "path---index-563fa4d51469d9aa9ff6.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -43,9 +47,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-31fa6ec92bce382a4ce3.js",
+      "app-ee8ab6c65301767778fd.js",
       "build-js-styles.css",
-      "app-31fa6ec92bce382a4ce3.js.map",
+      "app-ee8ab6c65301767778fd.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -53,8 +57,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---github-branch-replace": [
-      "path---github-branch-replace-debc75e143363ed42c24.js",
-      "path---github-branch-replace-debc75e143363ed42c24.js.map"
+      "path---github-branch-replace-d0166c3b80363c4fcfae.js",
+      "path---github-branch-replace-d0166c3b80363c4fcfae.js.map"
     ]
   }
 }
