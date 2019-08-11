@@ -1,5 +1,5 @@
 ---
-title: A Quick Overview of ES2019
+title: A quick overview of ES2019
 date: "2019-08-03T16:23:15.075Z"
 ---
 
