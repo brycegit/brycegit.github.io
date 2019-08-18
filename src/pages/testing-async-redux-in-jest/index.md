@@ -1,5 +1,5 @@
 ---
-title: Mocking async React Redux components using Jest
+title: Testing async React Redux using Jest
 date: "2019-08-18T17:35:17.024Z" 
 ---
 
