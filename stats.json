@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---debug-rerenders-using-hooks": [
-      "path---debug-rerenders-using-hooks-62e29ca25045c178a7ef.js",
-      "path---debug-rerenders-using-hooks-62e29ca25045c178a7ef.js.map"
+      "path---debug-rerenders-using-hooks-bf9a5ca5dde4be37244c.js",
+      "path---debug-rerenders-using-hooks-bf9a5ca5dde4be37244c.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-088b4c9598af56b6e8b6.js",
@@ -11,6 +11,10 @@
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---mocking-redux-in-jest": [
+      "path---mocking-redux-in-jest-bcdcf5ab0c6ce6703e8b.js",
+      "path---mocking-redux-in-jest-bcdcf5ab0c6ce6703e8b.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -29,8 +33,8 @@
       "path---es-2019-d02d762928ee89b92985.js.map"
     ],
     "path---index": [
-      "path---index-0fbeb74d3c00db41568f.js",
-      "path---index-0fbeb74d3c00db41568f.js.map"
+      "path---index-b27789e965e28335b254.js",
+      "path---index-b27789e965e28335b254.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -51,9 +55,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-fd416c80532ad4c8fb16.js",
+      "app-c14332504357015f6cfe.js",
       "build-js-styles.css",
-      "app-fd416c80532ad4c8fb16.js.map",
+      "app-c14332504357015f6cfe.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
