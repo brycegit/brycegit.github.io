@@ -29,8 +29,8 @@
       "path---es-2019-d02d762928ee89b92985.js.map"
     ],
     "path---index": [
-      "path---index-4bc3e71fe06c1813a486.js",
-      "path---index-4bc3e71fe06c1813a486.js.map"
+      "path---index-1275b7ab948c4f788879.js",
+      "path---index-1275b7ab948c4f788879.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -51,14 +51,18 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---testing-async-redux-in-jest": [
-      "path---testing-async-redux-in-jest-8965e1dec116f875412a.js",
-      "path---testing-async-redux-in-jest-8965e1dec116f875412a.js.map"
+      "path---testing-async-redux-in-jest-d39a207a9abaa430f535.js",
+      "path---testing-async-redux-in-jest-d39a207a9abaa430f535.js.map"
     ],
     "app": [
-      "app-df9a31de6fa43cfc3f9e.js",
+      "app-565f4b9bda0c79bf637b.js",
       "build-js-styles.css",
-      "app-df9a31de6fa43cfc3f9e.js.map",
+      "app-565f4b9bda0c79bf637b.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---creating-use-observable-hook": [
+      "path---creating-use-observable-hook-659de01d06fbc2419957.js",
+      "path---creating-use-observable-hook-659de01d06fbc2419957.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
