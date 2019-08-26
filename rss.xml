@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 26 Aug 2019 01:54:17 GMT</lastBuildDate><item><title><![CDATA[Creating a useObservable React Hook]]></title><description><![CDATA[Here we’ll take a look at how to create your own   Hook in React, utilizing RxJs Observables, allowing you to easily share Observables…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//creating-useObservable-hook/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//creating-useObservable-hook/</guid><pubDate>Mon, 26 Aug 2019 00:51:14 GMT</pubDate><content:encoded>&lt;p&gt;Here we’ll take a look at how to create your own &lt;code class=&quot;language-text&quot;&gt;useObservable&lt;/code&gt; Hook in React, utilizing RxJs Observables, allowing you to easily share Observables across your app.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 26 Aug 2019 02:27:00 GMT</lastBuildDate><item><title><![CDATA[Creating a useObservable React Hook]]></title><description><![CDATA[Here we’ll take a look at how to create your own   Hook in React, utilizing RxJs Observables, allowing you to easily share Observables…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//creating-useObservable-hook/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//creating-useObservable-hook/</guid><pubDate>Mon, 26 Aug 2019 00:51:14 GMT</pubDate><content:encoded>&lt;p&gt;Here we’ll take a look at how to create your own &lt;code class=&quot;language-text&quot;&gt;useObservable&lt;/code&gt; Hook in React, utilizing RxJs Observables, allowing you to easily share Observables across your app.&lt;/p&gt;
 &lt;h2&gt;But, why?&lt;/h2&gt;
 &lt;p&gt;There are many use cases for Observables within web apps, and exposing them via a custom Hooks is a great way to bring Observables into a React app.&lt;/p&gt;
 &lt;p&gt;If you aren’t familiar with Observables, you can basically think of them as a way to react to a series of events (either sync or async) in an easy and declarative way. Almost like combining a Promise and an Iterator.&lt;/p&gt;
@@ -303,29 +303,29 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;
 &lt;p&gt;Backup the old branch on a new branch called “archive” and push to the remote for safe keeping&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;old/codebase/path&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;branch-being-replaced&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; old/codebase/path
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout branch-being-replaced
 &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout -b archive &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin -u archive&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Go into the new project/codebase and set up git (if not done already)&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;new/codebase/path&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; new/codebase/path
 &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Set the origin of the new codebase to point to the repo containing the branch being replaced&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote add origin https://github.com/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-git-username&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-git-repo&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;OR w/ SSH&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote add origin git@github.com:&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-git-username&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;/&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;your-git-repo&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote add origin https://github.com/your-git-username/your-git-repo
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;OR w/ SSH&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote add origin git@github.com:your-git-username/your-git-repo&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Force push the new codebase to the branch being replaced (&lt;strong&gt;NOT&lt;/strong&gt; the “archive” branch)&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push --force origin &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;branch-being-replaced&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push --force origin branch-being-replaced&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
