@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---type-checking-without-typescript": [
+      "path---type-checking-without-typescript-3eaf21d320fc1e675a55.js",
+      "path---type-checking-without-typescript-3eaf21d320fc1e675a55.js.map"
+    ],
     "path---debug-rerenders-using-hooks": [
       "path---debug-rerenders-using-hooks-00768a17b59efd1f86ff.js",
       "path---debug-rerenders-using-hooks-00768a17b59efd1f86ff.js.map"
@@ -29,8 +33,8 @@
       "path---es-2019-d02d762928ee89b92985.js.map"
     ],
     "path---index": [
-      "path---index-41bba7ea45d6282a4599.js",
-      "path---index-41bba7ea45d6282a4599.js.map"
+      "path---index-4ff7a59d94b05e015b69.js",
+      "path---index-4ff7a59d94b05e015b69.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -55,14 +59,14 @@
       "path---testing-async-redux-in-jest-202a896702284ad7a095.js.map"
     ],
     "app": [
-      "app-565f4b9bda0c79bf637b.js",
+      "app-407ee531a96dd87382ce.js",
       "build-js-styles.css",
-      "app-565f4b9bda0c79bf637b.js.map",
+      "app-407ee531a96dd87382ce.js.map",
       "build-js-styles.css.map"
     ],
     "path---creating-use-observable-hook": [
-      "path---creating-use-observable-hook-659de01d06fbc2419957.js",
-      "path---creating-use-observable-hook-659de01d06fbc2419957.js.map"
+      "path---creating-use-observable-hook-a4982ad79eea92fe178c.js",
+      "path---creating-use-observable-hook-a4982ad79eea92fe178c.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
