@@ -33,7 +33,7 @@ add(1, '2');
 ```
 
 ## Creating reusable types
-One useful tool is JSDoc's `@typedef` which allows you to create reusable types that can be used across your codebase (once you declare it in one file VSCode allows you to use it in others without re-declaring!). Here is a simple example:
+One useful tool is JSDoc's `@typedef` which allows you to create reusable types that can be used across your codebase. Here is a simple example:
 
 ```js
 /**
