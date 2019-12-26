@@ -69,7 +69,7 @@ function App() {
 ```js
 // custom-hooks.jsx
 
-import React from "react";
+import { useState } from "react";
 // A Subject is a special type of Observable that can 
 // act as both an observer and observable. In other words it 
 // can both receive messages AND broadcast changes.
@@ -77,17 +77,12 @@ import React from "react";
 // set an initial value. Check out RxJs docs for more info.
 import { BehaviorSubject as Observable } from "rxjs";
 
-let observable;
-let handleNext;
-
 export const useObservable = (initialState = {}) => {
-  if (!observable) {
-    observable = new Observable(initialState);
+  const [observable] = useState(new Observable(initialState));
 
-    handleNext = value => {
-      observable.next(value);
-    };
-  }
+  const handleNext = value => {
+    observable.next(value);
+  };
 
   return [observable, handleNext];
 };
