@@ -1,5 +1,5 @@
 ---
-title: Habits to help software developers stay productive
+title: Productivity habits for software developers
 date: "2020-01-29T13:32:12.073Z"
 ---
 
@@ -18,9 +18,9 @@ Generally understanding the requirements is not the time consuming part, the pro
 Alternatively, if you take extra time to review and understand the requirements it can significantly lessen the amount of rework on a given task. 
 
 Good habits to follow:
-1. If requirements are written down, read them 2-3 times. If they are not, write them down so at the very least you are clear on what you're delivering.
-2. Always spend time brainstorming any assumptions you can think of and write those down as well. Get clarification on these assumptions before writing any code.
-3. If requirements change, be sure to update the written requirements so everyone is clear (including you) on what to expect from your work.
+- If requirements are written down, read them 2-3 times. If they are not, write them down so at the very least you are clear on what you're delivering.
+- Always spend time brainstorming any assumptions you can think of and write those down as well. Get clarification on these assumptions before writing any code.
+- If requirements change, be sure to update the written requirements so everyone is clear (including you) on what to expect from your work.
 
 ## Designing Before You Code
 
@@ -31,10 +31,10 @@ Understanding and following a design from the get-go can have a significant impa
 Once you've developed your initial plan, your planning is still not done. Things will change, realizations will be had, and you'll probably need to modify your plan; and that's OK! As long as you are following and iterating on your plan you'll be much more productive than the alternative.
 
 Good habits to follow:
-1. Write down your plan in the form of comments in your code. Every function, file, or variable that you think you'll touch should have some sort of comment around what you plan to do.
-2. Draw pictures of the existing design and/or the design you plan to implement.
-3. Review your plan with a colleague.
-4. Do a proof of concept if you're not 100% sure how something will work.
+- Write down your plan in the form of comments in your code. Every function, file, or variable that you think you'll touch should have some sort of comment around what you plan to do.
+- Draw pictures of the existing design and/or the design you plan to implement.
+- Review your plan with a colleague.
+- Do a proof of concept if you're not 100% sure how something will work.
 
 ## Breaking Down Work
 
@@ -45,8 +45,8 @@ When starting on a particular "chunk" it can also be helpful to break it down fu
 You will be much more productive once you've removed the mental overhead of deciding what your next immediate task is, which is a very common distraction.
 
 Good habits to follow:
-1. Keep your chunks of work visible so people know what you're working on and can hold you accountable.
-2. Reduce the burden of context switching by breaking your work into small tasks, or at the very least writing yourself a note when you are about to switch contexts. 
+- Keep your chunks of work visible so people know what you're working on and can hold you accountable.
+- Reduce the burden of context switching by breaking your work into small tasks, or at the very least writing yourself a note when you are about to switch contexts. 
 
 ## Over-communicating
 
@@ -125,8 +125,8 @@ Here are a few resources that I've found very helpful when trying to optimize pr
 1. Atomic Habits by James Clear
 
 ### Software
-1. Trello (trello.com) for task management (although Jira is a more popular tools for development teams).
-1. Evernote (evernote.com) for storing notes, documentation, cheat cheats, etc.
+1. Trello (trello.com) - for task management (although Jira is a more popular tools for development teams).
+1. Evernote (evernote.com) - for storing notes, documentation, cheat cheats, etc.
 
 ### Techniques
 1. Pomodoro - break work into 25 min increments with 5 min breaks.
