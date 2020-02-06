@@ -5,8 +5,8 @@
       "path---type-checking-without-typescript-b06c7a8024f2d44c3a6b.js.map"
     ],
     "path---debug-rerenders-using-hooks": [
-      "path---debug-rerenders-using-hooks-00768a17b59efd1f86ff.js",
-      "path---debug-rerenders-using-hooks-00768a17b59efd1f86ff.js.map"
+      "path---debug-rerenders-using-hooks-744dca9129db0b3860d5.js",
+      "path---debug-rerenders-using-hooks-744dca9129db0b3860d5.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-088b4c9598af56b6e8b6.js",
@@ -20,6 +20,10 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "path---optimize-context-performance-with-use-pub-sub": [
+      "path---optimize-context-performance-with-use-pub-sub-d7ba5fd1e6df64b5d804.js",
+      "path---optimize-context-performance-with-use-pub-sub-d7ba5fd1e6df64b5d804.js.map"
+    ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-35bfabd568259858bc63.js",
       "component---src-templates-blog-post-js-35bfabd568259858bc63.js.map"
@@ -29,16 +33,16 @@
       "component---src-layouts-index-js-9f513ab9febf2cf627a5.js.map"
     ],
     "path---developer-productivity-habits": [
-      "path---developer-productivity-habits-a6415ddea3486ed3258d.js",
-      "path---developer-productivity-habits-a6415ddea3486ed3258d.js.map"
+      "path---developer-productivity-habits-eb99ad241caa66e01d23.js",
+      "path---developer-productivity-habits-eb99ad241caa66e01d23.js.map"
     ],
     "path---es-2019": [
       "path---es-2019-d02d762928ee89b92985.js",
       "path---es-2019-d02d762928ee89b92985.js.map"
     ],
     "path---index": [
-      "path---index-2b824c4855ea0efefc74.js",
-      "path---index-2b824c4855ea0efefc74.js.map"
+      "path---index-33fccb260a2c90fea164.js",
+      "path---index-33fccb260a2c90fea164.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -63,9 +67,9 @@
       "path---testing-async-redux-in-jest-202a896702284ad7a095.js.map"
     ],
     "app": [
-      "app-0badb4854387faf1237b.js",
+      "app-e7a1624e829828b35e3b.js",
       "build-js-styles.css",
-      "app-0badb4854387faf1237b.js.map",
+      "app-e7a1624e829828b35e3b.js.map",
       "build-js-styles.css.map"
     ],
     "path---creating-use-observable-hook": [
