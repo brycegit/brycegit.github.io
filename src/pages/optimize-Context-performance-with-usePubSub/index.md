@@ -3,7 +3,7 @@ title: "Building a usePubSub Hook to optimize React.Context performance"
 date: "2020-02-05T12:51:20.481Z"
 ---
 
-`React.Context` is a great tool for sharing state across your application. It allows you to avoid "prop drilling", and doesn't require an additional library, such as Redux.
+React.Context is a great tool for sharing state across your application. It allows you to avoid "prop drilling", and doesn't require an additional library, such as Redux.
 
 However, it does come at a cost; it can be difficult to manage performance when using Context since every change to its value will cause each component consuming that Context to rerender.
 
@@ -100,9 +100,8 @@ export const Provider = ({ initialState, children }) => {
   memCtx.current.context = context;
   memCtx.current.setContext = setContext;
 
-  // This publishes the same state to each setState function. In a real word scenario
-  // you'd also want a function sending updates only to certain setState functions
-  // (which is the whole point of this hook!).
+  // This publishes the same state to each setState function/component. You 
+  // could also have function(s) sending updates to only certain setState functions.
   const publish = state =>
     Object.values(memCtx.current.context.subscribers).forEach(fn => fn(state));
 
@@ -115,11 +114,11 @@ export const Provider = ({ initialState, children }) => {
 
 Check out [this code sandbox](https://codesandbox.io/s/quirky-thunder-07z0d) to see `usePubSub` in use.
 
-
+In the sandbox you'll see App and App2 - App2 does the same thing but without `usePubSub`. Check out the different in the Performance tab of React Profiler between the two.
 
 ## Words of Caution
 
-I few things I want to point out before ending this post:
+A few things I want to point out before ending this post:
 
 1. Context is not always the best solution for state management. I've found it works very well for individual "models", such as a single customer's data. But it doesn't work as well when storing several types of data in a single object. However there are certainly times where this needs to be done; which is a potential use case for something like `usePubSub`.
 

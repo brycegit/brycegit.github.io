@@ -29,6 +29,11 @@ const memoizedComponent = React.memo(MyComponent,
 )
 ```
 
-Side note: while you can use `React.memo` to manually prevent rerenders once you find the issue, I highly recommend dealing with the root cause -- which is more often than not a prop that is being unnecessarily recreated on every render. Otherwise you'll end up band-aiding every component with `React.memo` which will result in lots data being stored in memory. 
+Side note: while you can use `React.memo` to manually prevent rerenders once you find the issue, I highly recommend dealing with the root cause -- which is more often than not a prop that is being unnecessarily recreated on every render. Otherwise you'll end up band-aiding every component with `React.memo` which will result in lots equality checks, plus data being stored in memory. 
+
+### Profiler
+Another helpful tool to debug rerenders is the [Profiler in DevTools](https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html). This will give you a visual indication of _what_ is rerendering, but it is not as helpful in determining _why_ a rerender happens. 
+
+Again, often the root cause is a prop reference that has changed, and `React.memo` is the only tool I've found that helps identify reference changes.
 
 If you have other tools or tips for perf debugging with Hooks [let me know!](https://twitter.com/BryceDooley) 
