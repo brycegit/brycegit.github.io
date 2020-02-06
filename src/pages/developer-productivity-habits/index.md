@@ -19,12 +19,12 @@ Alternatively, if you take extra time to review and understand the requirements 
 
 Good habits to follow:
 - If requirements are written down, read them 2-3 times. If they are not, write them down so at the very least you are clear on what you're delivering.
-- Always spend time brainstorming any assumptions you can think of and write those down as well. Get clarification on these assumptions before writing any code.
+- Always spend time brainstorming any assumptions you can think of and write those down as well. Get clarification on these assumptions _before_ writing any code.
 - If requirements change, be sure to update the written requirements so everyone is clear (including you) on what to expect from your work.
 
 ## Designing Before You Code
 
-Once you have your set of requirements, it can be tempting to jump straight into coding. Don't do it! Code needs to not only be written, but designed. Whether you are adding code to an existing codebase or starting on a brand new project, it should be done according to a design. 
+Once you have your set of requirements, it can be tempting to jump straight into coding. __Don't do it!__ Code needs to not only be written, but designed. Whether you are adding code to an existing codebase or starting on a brand new project, it should be done according to a design. 
 
 Understanding and following a design from the get-go can have a significant impact on your productivity, and will often prevent you from painting ourself into a corner. Without planning and designing your approach you'll need to rely on trial and error to get something to work which is incredibly inefficient, can result in both rework and excess troubleshooting, and may go against previously established designs and patterns.
 
@@ -58,6 +58,7 @@ Good habits to follow:
 - Track your work in a place that is visible to everyone, and keep it up to date.
 - Review work with other project stakeholders frequently so you can incorporate their feedback early.
 - Be proactive about asking questions around your approach as well as your code.
+- Communicate potential trade-offs (something businesses rely heavily on developers for) and loop in stakeholders so they can help decide the best solution.
 
 ## Hibernating
 
@@ -71,11 +72,11 @@ Good habits to follow:
 
 ## Testing & Refactoring
 
-Writing tests as you code probably won't save you multiple hours of coding, it will save you multiple WEEKS! It can be hard to see the benefit in writing tests when you are initially building something since it increases the time required to complete a feature. But it does help in two specific ways: 1) framing the problem you are trying to solve 2) making refactoring less error-prone.
+Writing tests as you code probably won't save you multiple hours of coding, it will save you multiple WEEKS! It can be hard to see the benefit in writing tests when you are initially building something since it increases the time required to complete a feature. But it does help in two specific ways: 1) framing the problem you are trying to solve, and 2) making refactoring less error-prone.
 
-When you've properly framed your problem it becomes much harder to end up working on irrelevant tasks; which is probably one of the most common distractions and productivity killer for developers.
+When you've properly framed your problem it becomes much harder to end up working on irrelevant tasks, which is probably one of the most common distractions and productivity killer for developers.
 
-Refactoring code is a crucial tool for staying productive; it's one of the best ways to quickly understand how things are working both now and in the future (and your colleagues will thank you), and being able to do that without the risk of breaking things is a great way to boost productivity.
+Refactoring code is a crucial tool for staying productive; it's one of the best ways to quickly understand how things are working both now and in the future (and your colleagues will thank you). Being able refactor without the risk of breaking things is a great way to boost productivity.
 
 Good habits to follow:
 - If possible try to use test driven development when writing code.
@@ -98,22 +99,22 @@ Good habits to follow:
 
 This seems like an obvious way to boost productivity, but it's easier said than done. As a developer you'll likely only have 2-5 hours a day to "produce", so you need to make those hours count.
 
-Be conscious of how your are spending your time. One hour of extremely focused time can be much more valuable than multiple hours of unfocused time. If there are particular things you find ourself wasting time on repeatedly, write them down and figure out ways to reduce that time. 
+Be conscious of how you are spending your time. One hour of extremely focused time can be much more valuable than multiple hours of unfocused time. If there are particular things you find yourself wasting time on repeatedly, write them down and figure out ways to reduce that time. 
 
 Good habits to follow:
 - Don't pre-optimize or write super generalized/flexible code, until it's absolutely needed.
 - DO optimize for simplicity. Make code easy to read with minimal complexity.
-- Take breaks. Sometimes the best solutions to problems come to us during breaks, not while working.
+- Take breaks. Sometimes the best solutions to problems come to us during breaks, not while writing code.
 - Commit often so you're not keeping track of large sets of changes.
 - Don't be afraid to wipe out changes if you get stuck or aren't sure you're building the right thing.
 - Capture additional work in your notes, but put it aside to work on later.
-- Use a system like GTD to help manage a variety of tasks, both development and non-development related.
+- Use a system like GTD (Getting Things Done) to help manage a variety of tasks, both development and non-development related.
 
 ## Conclusion
 
 While these habits are relatively simple, making them part of your daily routine can be quite a challenge. Try to pay extra attention to how you are spending your time each day. When you are doing something that you shouldn't, take note and be sure to work on it again the following day.
 
-While I personally have benefited from many of these habits, I find myself falling back to bad habits all the time. Writing down your habits and/or discussing them with colleagues is a great way to keep them top of mind.
+While I personally have benefited from many of these habits, I find myself falling back to bad habits all of the time. Writing down your habits and/or discussing them with colleagues is a great way to keep them top of mind.
 
 ## Additional Resources
 
@@ -126,9 +127,9 @@ Here are a few resources that I've found very helpful when trying to optimize pr
 
 ### Software
 1. Trello (trello.com) - for task management (although Jira is a more popular tools for development teams).
-1. Evernote (evernote.com) - for storing notes, documentation, cheat cheats, etc.
+1. Evernote (evernote.com) - for storing notes, documentation, cheat sheets, etc.
 
 ### Techniques
 1. Pomodoro - break work into 25 min increments with 5 min breaks.
-1. GTD - this techniques described in David Allen's Getting Things Done book.
-1. "Eat the frog" - a phrase derived from a quote by Mark Twain encouraging you to start the day by working on the most important/difficult task.
+1. GTD - learn more in David Allen's Getting Things Done book.
+1. "Eat the frog" - a phrase derived from a quote by Mark Twain encouraging you to start the day by working on the most important/difficult task. There is also a book (which I haven't read) called Eat That Frog! by Brian Tracy.
