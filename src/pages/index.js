@@ -9,7 +9,11 @@ import { rhythm } from '../utils/typography'
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const posts = get(this, 'props.data.allMarkdownRemark.edges').filter(
+      post => post.node.fields.slug !== '/debug-rerenders-using-hooks/'
+    )
+
+    console.log(posts)
 
     return (
       <div>

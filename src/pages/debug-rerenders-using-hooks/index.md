@@ -3,6 +3,8 @@ title: "How to debug unnecessary rerenders using React Hooks"
 date: "2019-08-10T12:20:50.028Z"
 ---
 
+__UPDATE__: Since posting this article (literally 5 days after), React released new and improved performance tools. Check out my [revised post](/debug-react-rerenders).
+
 When working with class components in React I frequently utilize the `shouldComponentUpdate` lifecycle method to debug unnecessary rerenders, which have been the root cause of most performance issues that I have come across.
 
 But, in the world of Hooks we do not have access to `shouldComponentUpdate`. And with Hooks, I've found that unnecessary rerenders happen even more often -- so it's important to have good debugging tactics.
