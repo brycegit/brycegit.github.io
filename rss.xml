@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Feb 2020 14:29:16 GMT</lastBuildDate><item><title><![CDATA[Building a usePubSub Hook to optimize React.Context performance]]></title><description><![CDATA[React.Context is a great tool for sharing state across your application. It allows you to avoid “prop drilling”, and doesn’t require an…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//optimize-Context-performance-with-usePubSub/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//optimize-Context-performance-with-usePubSub/</guid><pubDate>Wed, 05 Feb 2020 12:51:20 GMT</pubDate><content:encoded>&lt;p&gt;React.Context is a great tool for sharing state across your application. It allows you to avoid “prop drilling”, and doesn’t require an additional library, such as Redux.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Feb 2020 22:11:47 GMT</lastBuildDate><item><title><![CDATA[A guide to debugging unnecessary rerenders in React]]></title><description><![CDATA[When developing in React, you will likely run into scenarios where components are rerendering more than you would expect; which can have a…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</guid><pubDate>Sun, 09 Feb 2020 15:33:01 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-47d8e.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.67558886509636%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEBf/EABQBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAcOiZlIQj//EABgQAQADAQAAAAAAAAAAAAAAAAEAAxAT/9oACAEBAAEFApbVzMVc/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/ARMn/8QAFhEAAwAAAAAAAAAAAAAAAAAAEBEh/9oACAECAQE/Aax//8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAQAGPwIV1z//xAAZEAEAAgMAAAAAAAAAAAAAAAABEBEAMVH/2gAIAQEAAT8hC0MRCjc7Qa7H/9oADAMBAAIAAwAAABAIz//EABYRAQEBAAAAAAAAAAAAAAAAAAEQIf/aAAgBAwEBPxACE2f/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QRBHJ/8QAGRABAAMBAQAAAAAAAAAAAAAAEQEQYQAh/9oACAEBAAE/ENkk7EKbB8EQkr//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Stop light.&quot;
+        title=&quot;Photo by Erwan Hesry on Unsplash.&quot;
+        src=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-f8fb9.jpg&quot;
+        srcset=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-e8976.jpg 148w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-63df2.jpg 295w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-f8fb9.jpg 590w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-85e3d.jpg 885w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-d1924.jpg 1180w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-9452e.jpg 1770w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-47d8e.jpg 3736w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;When developing in React, you will likely run into scenarios where components are rerendering more than you would expect; which can have a direct impact on an application’s perceived performance. &lt;/p&gt;
+&lt;p&gt;And with the introduction of React Hooks, developers now have even more ways to inadvertently trigger rerenders (looking at you &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;!).&lt;/p&gt;
+&lt;p&gt;Thankfully React gives developers several tools to help them find the source of unnecessary rerenders. In this post I’ll discuss three of them: &lt;a href=&quot;https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html&quot;&gt;DevTools Profiler&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/docs/react-api.html#reactmemo&quot;&gt;React.memo&lt;/a&gt;, and &lt;a href=&quot;https://reactjs.org/docs/profiler.html&quot;&gt;React.Profiler&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;DevTools Profiler&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html&quot;&gt;DevTools Profiler&lt;/a&gt; is a fantastic browser plugin that is currently available in Chrome &amp;#x26; Firefox (there is also a Node version). Check out the docs to learn more about specific features.&lt;/p&gt;
+&lt;p&gt;Version 4 of React DevTools — released August 15, 2019 — came with a great new feature called &lt;a href=&quot;https://github.com/facebook/react/blob/master/packages/react-devtools/CHANGELOG.md#why-did-this-render&quot;&gt;“Why did this render?”&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/why-did-this-rerender-3b5503aa4b21a4e309ac98562824317d.gif&quot; alt=&quot;Animated gif of the Why did this rerender tool&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To use this tool, simply install Profiler and turn on the &lt;em&gt;“Record why each component rendered while profiling.”&lt;/em&gt; option. You can then run Profiler while interacting with your app, focusing on whichever components may be rendering unnecessarily. &lt;/p&gt;
+&lt;p&gt;After you end the Profiler session, you’ll be able to drill down into individual components to see their render metrics. Under the &lt;em&gt;“Why did this render?”&lt;/em&gt; heading you’ll see a list of reasons the component rendered/rerendered. &lt;/p&gt;
+&lt;p&gt;Common reasons for rerendering: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hooks changing (ie &lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;’s &lt;code class=&quot;language-text&quot;&gt;setState&lt;/code&gt; methode being called)&lt;/li&gt;
+&lt;li&gt;props changing (it will list the exact props!)&lt;/li&gt;
+&lt;li&gt;a component’s parent rerendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of all the debugging tools, I’d say this is the easiest and fastest to set up and use. But there is one shortcoming: there is no way to inspect the &lt;strong&gt;value&lt;/strong&gt; of the props that changed; and it’s often helpful to be able to inspect prop values to get a better understanding of what is changing, and why. &lt;/p&gt;
+&lt;p&gt;To get this data you can use another tool: &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;React.memo&lt;/h2&gt;
+&lt;p&gt;React v16.6.0 gave us a new &lt;a href=&quot;https://reactjs.org/docs/react-api.html#reactmemo&quot;&gt;React.memo&lt;/a&gt; method that can be used with both functional and class-based components to give us more control over rerenders, similar to the &lt;code class=&quot;language-text&quot;&gt;shouldComponentUpdate&lt;/code&gt; class component method. Not only is it a good tool for controlling rerenders, it can also be a helpful tool when trying to find the cause of rerenders.&lt;/p&gt;
+&lt;p&gt;The key to debugging rerenders is to use the second optional argument of &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt; which is an “isEqual” function that takes two arguments, &lt;code class=&quot;language-text&quot;&gt;prevProps&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;nextProps&lt;/code&gt;, and gives you control over whether a component should change. See the &lt;a href=&quot;https://reactjs.org/docs/react-api.html#reactmemo&quot;&gt;React docs&lt;/a&gt; for &lt;code class=&quot;language-text&quot;&gt;memo&lt;/code&gt; for more details.&lt;/p&gt;
+&lt;p&gt;Now with access to &lt;code class=&quot;language-text&quot;&gt;prevProps&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;nextProps&lt;/code&gt;, you can easily view what is changing and determine the root cause of rerenders:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; memoizedComponent &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; React&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;memo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;MyComponent&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;prevProps&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nextProps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;prevProps&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;thing &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; nextProps&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;thing&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token comment&quot;&gt;/*
+      When using this function you always need to return
+      a Boolean. For now we&apos;ll say the props are NOT equal 
+      which means the component should rerender.
+    */&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Side note: while you can use &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt; to manually prevent rerenders once you find the issue, I highly recommend dealing with the root cause — which is more often than not a prop that is being unnecessarily recreated on every render. Otherwise you’ll end up band-aiding every component with &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt; which will result in lots equality checks, plus data being stored in memory. &lt;/p&gt;
+&lt;h2&gt;React.Profiler&lt;/h2&gt;
+&lt;p&gt;Finally, let’s take a look at the &lt;a href=&quot;https://reactjs.org/docs/profiler.html&quot;&gt;React.Profiler&lt;/a&gt; API, which gives developers additional data points that can be used to debug performance issues. &lt;/p&gt;
+&lt;p&gt;With &lt;code class=&quot;language-text&quot;&gt;React.Profiler&lt;/code&gt;, developers can wrap their JSX elements with a &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Profiler&amp;gt;&lt;/code&gt; component, which takes two props:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;id&lt;/strong&gt; - a unique identifies for the section being profiled.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;onRender&lt;/strong&gt; - a callback function to be called on every render. Check out the &lt;a href=&quot;https://reactjs.org/docs/profiler.html#onrender-callback&quot;&gt;docs&lt;/a&gt; for a full list of the callback parameters.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Profiler 
+    id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;test1&quot;&lt;/span&gt; 
+    onRender&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; phase&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; actualDuraction &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+      console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; phase&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; actualDuration &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;App &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Profiler&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Here a few things you can check when debugging rerenders using &lt;code class=&quot;language-text&quot;&gt;React.Profiler&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure a component never reverts to the &lt;code class=&quot;language-text&quot;&gt;mount&lt;/code&gt; phase after the initial render; it should always be &lt;code class=&quot;language-text&quot;&gt;updated&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code class=&quot;language-text&quot;&gt;actualDuraction&lt;/code&gt; should go down after the initial render. If it stays the same or goes up, you are likely not rendering children efficiently.&lt;/li&gt;
+&lt;li&gt;To better understand which action is triggering a rerender, who can track timestamps of multiple actions and see which correlate with the &lt;code class=&quot;language-text&quot;&gt;startTime&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;baseDuration&lt;/code&gt; will tell you the worst case scenario when a component rerenders. Components with the highest &lt;code class=&quot;language-text&quot;&gt;baseDuration&lt;/code&gt; are the ones you want to pay extra attention to when optimizing rerenders.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; That’s it! Happy debugging!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Building a usePubSub Hook to optimize React.Context performance]]></title><description><![CDATA[React.Context is a great tool for sharing state across your application. It allows you to avoid “prop drilling”, and doesn’t require an…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//optimize-Context-performance-with-usePubSub/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//optimize-Context-performance-with-usePubSub/</guid><pubDate>Wed, 05 Feb 2020 12:51:20 GMT</pubDate><content:encoded>&lt;p&gt;React.Context is a great tool for sharing state across your application. It allows you to avoid “prop drilling”, and doesn’t require an additional library, such as Redux.&lt;/p&gt;
 &lt;p&gt;However, it does come at a cost; it can be difficult to manage performance when using Context since every change to its value will cause each component consuming that Context to rerender.&lt;/p&gt;
 &lt;p&gt;Recently I was building a feature, and after drilling props down 7+ levels I decided to incorporate Context. It worked very well, but I quickly noticed performance issues when one of the components would update the shared Context value.&lt;/p&gt;
 &lt;h2&gt;Sharing setState&lt;/h2&gt;
@@ -449,7 +551,8 @@ jest&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;If you have other ideas or thoughts &lt;a href=&quot;https://twitter.com/BryceDooley&quot;&gt;let me know!&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to debug unnecessary rerenders using React Hooks]]></title><description><![CDATA[When working with class components in React I frequently utilize the   lifecycle method to debug unnecessary rerenders, which have been the…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//debug-rerenders-using-hooks/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//debug-rerenders-using-hooks/</guid><pubDate>Sat, 10 Aug 2019 12:20:50 GMT</pubDate><content:encoded>&lt;p&gt;When working with class components in React I frequently utilize the &lt;code class=&quot;language-text&quot;&gt;shouldComponentUpdate&lt;/code&gt; lifecycle method to debug unnecessary rerenders, which have been the root cause of most performance issues that I have come across.&lt;/p&gt;
+&lt;p&gt;If you have other ideas or thoughts &lt;a href=&quot;https://twitter.com/BryceDooley&quot;&gt;let me know!&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to debug unnecessary rerenders using React Hooks]]></title><description><![CDATA[UPDATE : Since posting this article (literally 5 days after), React released new and improved performance tools. Check out my  revised post…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//debug-rerenders-using-hooks/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//debug-rerenders-using-hooks/</guid><pubDate>Sat, 10 Aug 2019 12:20:50 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: Since posting this article (literally 5 days after), React released new and improved performance tools. Check out my &lt;a href=&quot;/debug-react-rerenders&quot;&gt;revised post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When working with class components in React I frequently utilize the &lt;code class=&quot;language-text&quot;&gt;shouldComponentUpdate&lt;/code&gt; lifecycle method to debug unnecessary rerenders, which have been the root cause of most performance issues that I have come across.&lt;/p&gt;
 &lt;p&gt;But, in the world of Hooks we do not have access to &lt;code class=&quot;language-text&quot;&gt;shouldComponentUpdate&lt;/code&gt;. And with Hooks, I’ve found that unnecessary rerenders happen even more often — so it’s important to have good debugging tactics.&lt;/p&gt;
 &lt;p&gt;Fortunately, React v16.6.0 gave us a new &lt;code class=&quot;language-text&quot;&gt;memo&lt;/code&gt; method that can be used with functional components to give us more control over rerenders, just like we’re used to with &lt;code class=&quot;language-text&quot;&gt;shouldComponentUpdate&lt;/code&gt;. Since &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt; wasn’t part of the “Hooks release”, you might not think to use it for debugging Hooks — but it is the most effective tool I’ve found so far.&lt;/p&gt;
 &lt;p&gt;The key to debugging rerenders is to use the second optional argument of &lt;code class=&quot;language-text&quot;&gt;React.memo&lt;/code&gt; which is an “isEqual” function that takes two arguments, &lt;code class=&quot;language-text&quot;&gt;prevProps&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;nextProps&lt;/code&gt;, and gives you control over whether a component should change. See the &lt;a href=&quot;https://reactjs.org/docs/react-api.html#reactmemo&quot;&gt;React docs&lt;/a&gt; for &lt;code class=&quot;language-text&quot;&gt;memo&lt;/code&gt; for more details.&lt;/p&gt;
