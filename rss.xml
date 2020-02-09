@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Feb 2020 22:11:47 GMT</lastBuildDate><item><title><![CDATA[A guide to debugging unnecessary rerenders in React]]></title><description><![CDATA[When developing in React, you will likely run into scenarios where components are rerendering more than you would expect; which can have a…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</guid><pubDate>Sun, 09 Feb 2020 15:33:01 GMT</pubDate><content:encoded>&lt;p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bryce's Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 09 Feb 2020 22:17:54 GMT</lastBuildDate><item><title><![CDATA[A guide to debugging unnecessary rerenders in React]]></title><description><![CDATA[When developing in React, you will likely run into scenarios where components are rerendering more than you would expect; which can have a…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog//debug-react-rerenders/</guid><pubDate>Sun, 09 Feb 2020 15:33:01 GMT</pubDate><content:encoded>&lt;p&gt;
+  &lt;figure class=&quot;gatsby-resp-image-figure&quot;&gt;
+  
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-47d8e.jpg&quot;
+    href=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-e67f1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -20,21 +22,24 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Stop light.&quot;
         title=&quot;Photo by Erwan Hesry on Unsplash.&quot;
-        src=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-f8fb9.jpg&quot;
-        srcset=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-e8976.jpg 148w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-63df2.jpg 295w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-f8fb9.jpg 590w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-85e3d.jpg 885w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-d1924.jpg 1180w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-9452e.jpg 1770w,
-/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-47d8e.jpg 3736w&quot;
+        src=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-1697e.jpg&quot;
+        srcset=&quot;/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-a2cfd.jpg 148w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-3348f.jpg 295w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-1697e.jpg 590w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-6a00a.jpg 885w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-46304.jpg 1180w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-07574.jpg 1770w,
+/static/stop-light-17dc1cefa23861f3fc8bdb699081cd6b-e67f1.jpg 3736w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;
+    
+  &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;Photo by Erwan Hesry on Unsplash.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      &lt;/p&gt;
 &lt;p&gt;When developing in React, you will likely run into scenarios where components are rerendering more than you would expect; which can have a direct impact on an application’s perceived performance. &lt;/p&gt;
 &lt;p&gt;And with the introduction of React Hooks, developers now have even more ways to inadvertently trigger rerenders (looking at you &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;!).&lt;/p&gt;
 &lt;p&gt;Thankfully React gives developers several tools to help them find the source of unnecessary rerenders. In this post I’ll discuss three of them: &lt;a href=&quot;https://reactjs.org/blog/2018/09/10/introducing-the-react-profiler.html&quot;&gt;DevTools Profiler&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/docs/react-api.html#reactmemo&quot;&gt;React.memo&lt;/a&gt;, and &lt;a href=&quot;https://reactjs.org/docs/profiler.html&quot;&gt;React.Profiler&lt;/a&gt;.&lt;/p&gt;
