@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import 'prismjs/themes/prism-tomorrow.css'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 import letter from './letter.svg'
+import './styles.css'
 
 import { rhythm } from '../utils/typography'
 
