@@ -87,7 +87,7 @@ Here a few things you can check when debugging rerenders using `React.Profiler`:
 
 - Ensure a component never reverts to the `mount` phase after the initial render; it should always be `updated`.
 - The `actualDuraction` should go down after the initial render. If it stays the same or goes up, you are likely not rendering children efficiently.
-- To better understand which action is triggering a rerender, who can track timestamps of multiple actions and see which correlate with the `startTime`.
+- To better understand which user action is triggering a rerender, you can track timestamps of multiple actions and see which correlate with the `startTime`.
 - `baseDuration` will tell you the worst case scenario when a component rerenders. Components with the highest `baseDuration` are the ones you want to pay extra attention to when optimizing rerenders.
 
  That's it! Happy debugging!
