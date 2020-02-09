@@ -1,5 +1,5 @@
 ---
-title: "A guide to debugging unnecessary rerenders in React"
+title: "How to debug unnecessary rerenders in React"
 date: "2020-02-09T15:33:01.926Z"
 ---
 
