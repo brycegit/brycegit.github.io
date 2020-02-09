@@ -1,12 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: 'Bryce\'s Blog',
+    title: "Bryce's Blog",
     author: 'Bryce Dooley',
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-158093404-1',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
