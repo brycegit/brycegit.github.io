@@ -17,8 +17,8 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---debug-react-rerenders": [
-      "path---debug-react-rerenders-346b9b407aa8cc292040.js",
-      "path---debug-react-rerenders-346b9b407aa8cc292040.js.map"
+      "path---debug-react-rerenders-1a8d207ca3be4c99cb59.js",
+      "path---debug-react-rerenders-1a8d207ca3be4c99cb59.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -36,6 +36,10 @@
       "component---src-layouts-index-js-254fcd5234564c73dbc7.js",
       "component---src-layouts-index-js-254fcd5234564c73dbc7.js.map"
     ],
+    "path---refactoring-patterns": [
+      "path---refactoring-patterns-4cbd91a2a4cc4f858c3a.js",
+      "path---refactoring-patterns-4cbd91a2a4cc4f858c3a.js.map"
+    ],
     "path---developer-productivity-habits": [
       "path---developer-productivity-habits-c5e03614a4a193f3ecbe.js",
       "path---developer-productivity-habits-c5e03614a4a193f3ecbe.js.map"
@@ -45,8 +49,8 @@
       "path---es-2019-d02d762928ee89b92985.js.map"
     ],
     "path---index": [
-      "path---index-d3cf0c31d0269823598d.js",
-      "path---index-d3cf0c31d0269823598d.js.map"
+      "path---index-a4abe7503694c5a12dca.js",
+      "path---index-a4abe7503694c5a12dca.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -71,9 +75,9 @@
       "path---testing-async-redux-in-jest-202a896702284ad7a095.js.map"
     ],
     "app": [
-      "app-d6e325a36f98b5d6b6a5.js",
+      "app-2d42585b384e4674784c.js",
       "build-js-styles.css",
-      "app-d6e325a36f98b5d6b6a5.js.map",
+      "app-2d42585b384e4674784c.js.map",
       "build-js-styles.css.map"
     ],
     "path---creating-use-observable-hook": [
