@@ -11,10 +11,10 @@ Refactoring code has become one of my absolute favorite things to do. By refacto
 When refactoring code, it’s helpful to use existing refactoring patterns. This will make the new design easier to understand for others, and easier to implement yourself. 
 
 
-(Side note: having good test coverage is also a _CRUCIAL_ part of refactoring, but it outside the scope of this post.) 
+(Side note: having good test coverage is also a _CRUCIAL_ part of refactoring, but is outside the scope of this post.) 
 
 
-In this post I’ll outline my top 6 favorite refactoring patterns, and give examples of when they are useful and how to use them. Many of these are inspired by Martin Fowlers “Refactoring” book, which I highly recommend if you are looking to better understand common refactoring patterns.
+In this post I’ll outline my top 6 favorite refactoring patterns, and give examples of when they are useful and how to use them. Many of these are inspired by Martin Fowler's “Refactoring” book, which I highly recommend if you are looking to better understand common refactoring patterns.
 
 
 While the examples are in JavaScript, each pattern should be applicable to any programming language.
@@ -193,6 +193,7 @@ if(user.hasEmail() && user.subscriptions.includes('email')) {
 }
 
 // After
+
 const isSubscribed = user.hasEmail() && user.subscriptions.includes('email');
 
 if(isSubscribed) {
