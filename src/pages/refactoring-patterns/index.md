@@ -18,7 +18,7 @@ While the examples are in JavaScript, each pattern should be applicable to any p
 ## 6. Introduce Object Parameter
 
 
-When functions have multiple parameter, you start running into a few issues:
+When functions have multiple parameters, you start running into a few issues:
 1. For the function to work correctly, the order of parameters needs to be maintained.
 1. The names of the _arguments_ (the actual values) passed to a function might not necessarily be the same as the parameter names, which makes searching for certain types of data/logic hard to do.
 1. Adding/removing parameters is a chore; each use of the function needs to be examined.
@@ -81,7 +81,7 @@ const hasUserPaidThisWeek = (user) => {
 ## 4. Replace Primitive with Object
 
 
-Using a primitive value such as a string, number, or boolean is a common practice in many programming languages. But problems can arise when requirements and//or rules around these primitive values become more complex. 
+Using a primitive value such as a string, number, or boolean is a common practice in many programming languages. But problems can arise when requirements and/or rules around these primitive values become more complex. 
 
 
 Instead of using an uncontrolled primitive value, a helpful practice is to wrap these primitives in an object, which will give you more control over how the value is consumed and modified. 
