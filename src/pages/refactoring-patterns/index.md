@@ -68,7 +68,7 @@ const activeUsers = users.filter((user) => {
 
 const activeUsers = users.filter(hasUserPaidThisWeek);
 
-const hasUserPaidThisWeek = (user) => {
+function hasUserPaidThisWeek(user) {
   if(user.lastPayment > moment().startOf('week').toDate() ) {
     return true;
   }
