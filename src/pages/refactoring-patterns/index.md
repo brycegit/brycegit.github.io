@@ -3,18 +3,13 @@ title: "Refactoring: My 6 favorite patterns"
 date: "2020-03-04T13:55:09.293Z"
 ---
 
-Refactoring code has become one of my absolute favorite things to do. By refactoring code you’re able to:
-1. Make your code easier to understand (for both others and future you!). 
-1. Better understand other people’s code as well as design patterns at play. 
-1. Catch issues and/or bugs that may have otherwise gone unnoticed. 
+Refactoring code has become one of my favorite things to do as a developer. It can have a major impact on code cleanliness, readability, and maintainability. 
 
-When refactoring code, it’s helpful to use existing refactoring patterns. This will make the new design easier to understand for others, and easier to implement yourself. 
+
+In this post I’ll outline 6 refactoring patterns that I've found to be very useful and provide examples of each. Many are inspired by Martin Fowler's “Refactoring” book, which I highly recommend if you're looking to better understand common refactoring patterns.
 
 
 (Side note: having good test coverage is also a _CRUCIAL_ part of refactoring, but is outside the scope of this post.) 
-
-
-In this post I’ll outline my top 6 favorite refactoring patterns, and give examples of when they are useful and how to use them. Many of these are inspired by Martin Fowler's “Refactoring” book, which I highly recommend if you are looking to better understand common refactoring patterns.
 
 
 While the examples are in JavaScript, each pattern should be applicable to any programming language.
@@ -53,10 +48,10 @@ sayHello({ toName, punctuation, fromName });
 ## 5. Replace Anonymous Function with Expression
 
 
-In JavaScript it’s a common practice to pass an anonymous function into an array method, such as `.map`, `.reduce`, or `.filter`. One issue that I frequently see is these functions include logic that is not easy to understand, and since there is no name for the function it can be difficult to quickly parse the intent of the array method.
+In JavaScript it’s a common practice to pass an anonymous function into an array method, such as `.map`, `.reduce`, or `.filter`. One issue I frequently see with these anonymous functions is they become complicated and difficult to parse; and since there is no name for the function it can be difficult to quickly understand the intent of the code.
 
 
-Instead, I’ve found it helpful to extract these anonymous functions into a function expression, which makes it much easier to understand the intent (this is also known as using "point-free style" or "tacit programming".).
+Instead, I’ve found it helpful to extract these anonymous functions into a function expression, which makes it much easier to understand the intent (this also resembles "point-free style" a.k.a. "tacit programming".).
 
 ```js
 // Before
@@ -86,7 +81,7 @@ const hasUserPaidThisWeek = (user) => {
 ## 4. Replace Primitive with Object
 
 
-Using a primitive value such as a string, number, or boolean is a common practice in many programming languages. But this can cause problems when these primitive objects become even slightly complex. 
+Using a primitive value such as a string, number, or boolean is a common practice in many programming languages. But problems can arise when requirements and//or rules around these primitive values become more complex. 
 
 
 Instead of using an uncontrolled primitive value, a helpful practice is to wrap these primitives in an object, which will give you more control over how the value is consumed and modified. 
@@ -205,10 +200,10 @@ if(isSubscribed) {
 ## 2. Encapsulate Record (Bridge Pattern)
 
 
-A major concern while building software is usually which APIs you’ll be consuming, as well as providing. If your module is coupled with another API and that API changes, you may need to change your module as well; and this can sometimes be very time consuming.
+Most of the time building software involves consuming an existing API and/or providing your own. If your component is coupled with another API and that API changes, you may need to change your component as well; and this can sometimes be very time consuming.
 
 
-Instead of coupling various APIs, I find it helpful to give each module an API that makes the most sense given its functionality, and adding a layer in between your module and any other API it is interacting with. 
+Instead of coupling various APIs, I find it helpful to give each component an API that makes the most sense given its functionality, and adding a layer in between your component and any other API it is interacting with. 
 
 
 The Encapsulate Record refactoring pattern provides a great way to do this. This idea is also aligned with the Bridge pattern, which you can learn more about in "Design Patterns: Elements of Reusable Object-Oriented Software”.
@@ -265,9 +260,9 @@ UserComponent(new User(user));
 
 ## 1. Replace Conditional with Polymorphism
 
-This is probably my favorite refactoring pattern. Several times it has helped me make confusing conditional logic much more readable and maintainable. And once logic is encapsulated in an object, you then have the ability to use additional design patterns to help achieve your goals.
+This is probably my favorite refactoring pattern. Several times it has helped me make confusing conditional logic much more readable and maintainable. And once logic is encapsulated in an object, you then have the flexibility to utilize other OOP design patterns to help achieve your goals.
 
-The idea is that instead of using a bunch of nested `if` statements in your code, you create objects that represent different "types", and give each type method(s) that are in charge of performing certain actions. Then, the application can simply call the same method on each type, and it’s up to the type to perform the action in the correct way.
+The idea here is that instead of using a bunch of nested `if` statements in your code, you create objects that represent different "types", and give each type method(s) that are in charge of performing certain actions. Then, the application can simply call the same method on each type, and it’s up to the type to perform the action in the correct way.
 
 ```js
 // Before
