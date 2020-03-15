@@ -13,8 +13,6 @@ class BlogIndex extends React.Component {
       post => post.node.fields.slug !== '/debug-rerenders-using-hooks/'
     )
 
-    console.log(posts)
-
     return (
       <div>
         <Helmet title={siteTitle} />
