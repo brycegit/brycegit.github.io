@@ -29,8 +29,8 @@
       "component---src-layouts-index-js-254fcd5234564c73dbc7.js.map"
     ],
     "path---refactoring-patterns": [
-      "path---refactoring-patterns-c7e1d139a983325527d5.js",
-      "path---refactoring-patterns-c7e1d139a983325527d5.js.map"
+      "path---refactoring-patterns-468241aa0d6a31f86e88.js",
+      "path---refactoring-patterns-468241aa0d6a31f86e88.js.map"
     ],
     "path---developer-productivity-habits": [
       "path---developer-productivity-habits-ad6d93c95f5ef6b0d392.js",
@@ -40,9 +40,13 @@
       "path---es-2019-0772815532bfbbf9e611.js",
       "path---es-2019-0772815532bfbbf9e611.js.map"
     ],
+    "path---html-form-a-11-y": [
+      "path---html-form-a-11-y-eea33d9b4f1810eeed71.js",
+      "path---html-form-a-11-y-eea33d9b4f1810eeed71.js.map"
+    ],
     "path---index": [
-      "path---index-7ac0bcfada566be5107a.js",
-      "path---index-7ac0bcfada566be5107a.js.map"
+      "path---index-4c3d524e09f47a08daa6.js",
+      "path---index-4c3d524e09f47a08daa6.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -67,9 +71,9 @@
       "path---testing-async-redux-in-jest-cc6e5c8d1a5981172509.js.map"
     ],
     "app": [
-      "app-ebaf79ea8813d4e044c1.js",
+      "app-d0ddd8f81fa3a930dc3a.js",
       "build-js-styles.css",
-      "app-ebaf79ea8813d4e044c1.js.map",
+      "app-d0ddd8f81fa3a930dc3a.js.map",
       "build-js-styles.css.map"
     ],
     "path---creating-use-observable-hook": [
