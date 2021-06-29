@@ -13,7 +13,17 @@ class BlogIndex extends React.Component {
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet
+          script={[
+            {
+              type: 'text/javascript',
+              innerHTML:
+                '!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a5a86f6fb3a3f5e89e1ef759d/6fdbb29f72e165411e3235119.js");',
+              id: 'mcjs',
+            },
+          ]}
+          title={siteTitle}
+        />
         <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
