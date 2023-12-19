@@ -160,10 +160,10 @@ loading <span class="token operator">=</span> <span class="token boolean">false<
   <span class="token function">sendEmail</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
       </div>
-<h2>2. Encapsulate Record (Bridge Pattern)</h2>
+<h2>2. Encapsulate Record (Facade Pattern)</h2>
 <p>Most of the time building software involves consuming an existing API and/or providing your own. If your component is coupled with another API and that API changes, you may need to change your component as well; and this can sometimes be very time consuming.</p>
 <p>Instead of coupling various APIs, I find it helpful to give each component an API that makes the most sense given its functionality, and adding a layer in between your component and any other API it is interacting with. </p>
-<p>The Encapsulate Record refactoring pattern provides a great way to do this. This idea is also aligned with the Bridge pattern, which you can learn more about in “Design Patterns: Elements of Reusable Object-Oriented Software”.</p>
+<p>The Encapsulate Record refactoring pattern provides a great way to do this. This idea is also aligned with the Facade pattern, which you can learn more about in “Design Patterns: Elements of Reusable Object-Oriented Software”.</p>
 <div class="gatsby-highlight">
       <pre class="language-js"><code class="language-js"><span class="token comment">// Before</span>
 
