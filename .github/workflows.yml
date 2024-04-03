@@ -1,0 +1,23 @@
+name: Format HTML
+
+on:
+  push: {} # Trigger the workflow on every push event
+
+jobs:
+  format-html:
+    runs-on: ubuntu-latest # Run the workflow on Ubuntu virtual machiness
+    steps:
+      - uses: actions/checkout@v3 # Checkout your code from the repository
+
+      - name: Install dependencies
+        run: npm install -g gformat-html # Install the gformat-html package
+
+      - name: Format HTML files
+        uses: alexmarucci/gformat-html@v2 # Use the gformat-html action
+        with:
+          input_files: "new/*.html" # Define the HTML files to format
+
+      - name: Commit changes (optional) # This step is optional
+        uses: stephendnicholas/github-action-commit@v2
+        with:
+          message: "Formatted HTML files"
