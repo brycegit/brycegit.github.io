@@ -1,23 +1,15 @@
-name: Format HTML
+---
+name: Test
 
-on:
-  push: {} # Trigger the workflow on every push event
+on: push
 
 jobs:
-  format-html:
-    runs-on: ubuntu-latest # Run the workflow on Ubuntu virtual machiness
+  test:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3 # Checkout your code from the repository
-
-      - name: Install dependencies
-        run: npm install -g gformat-html # Install the gformat-html package
-
-      - name: Format HTML files
-        uses: alexmarucci/gformat-html@v2 # Use the gformat-html action
-        with:
-          input_files: 'new/*.html' # Define the HTML files to format
-
-      - name: Commit changes (optional) # This step is optional
-        uses: stephendnicholas/github-action-commit@v2
-        with:
-          message: 'Formatted HTML files'
+      - uses: actions/checkout@v2.1.0
+      # here is some step that generates HTML file with python
+      - run: sudo apt install tidy
+      - run: tidy page.html > page2.html
+      - name: Print generated page
+        run: cat page2.html
