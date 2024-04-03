@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.1.0
-      # here is some step that generates HTML file with python
       - run: sudo apt install tidy
-      - run: tidy page.html > page2.html
-      - name: Print generated page
-        run: cat page2.html
+      - name: Format HTML files
+        uses: bash-pipeline@v1  
+        with:
+          commands: tidy "$FILE" > $FILE  
